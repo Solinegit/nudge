@@ -70,3 +70,76 @@ Notre approche : une façon **amusante de s'informer** et de **confronter direct
 - Écran de révélation : candidat, lien vers le programme, autres citations du même thème pour les autres candidats.
 - Sélection aléatoire des citations.
 - Hébergement envisagé : GitHub Pages.
+
+## 8. Implémentation
+
+### Structure du site
+
+```
+nudge/
+├── index.html            # SPA : accueil + jeu + révélation
+├── sources.html          # page « Sources & méthode »
+├── css/style.css         # styles (responsive)
+├── js/app.js             # logique du jeu
+└── data/programmes.json  # candidats, thèmes, citations (avec sources)
+```
+
+### Fichier de données modifiable
+
+Toutes les données (candidats, thèmes, **citations**, sources, liens) sont dans
+`data/programmes.json`, chargé dynamiquement par le JavaScript. Pour changer une
+citation, ajouter un candidat ou un thème, **il suffit d'éditer ce fichier** puis de
+pousser : le site se met à jour sans toucher au code.
+
+Chaque citation suit ce schéma :
+
+```json
+{
+  "id": 1,
+  "candidat": "melenchon",
+  "theme": "retraites",
+  "texte": "…extrait verbatim…",
+  "source": {
+    "document": "L'Avenir en commun (édition 2025)",
+    "section": "Garantir une retraite digne",
+    "url": "https://melenchon2027.fr/programme2025/livre/"
+  }
+}
+```
+
+### Contenu
+
+- **6 candidats**, un par bord politique, classés de gauche à droite (ordre des bancs de l'Assemblée) :
+  Mélenchon (LFI), Tondelier (Les Écologistes), Attal (Renaissance), Édouard Philippe (Horizons),
+  Retailleau (LR), Le Pen (RN).
+- **4 thèmes** traités par tous les programmes : Économie & pouvoir d'achat, Retraites,
+  Climat & énergie, Éducation.
+- **24 citations** (4 par candidat), extraites à l'identique des documents officiels,
+  avec source traçable (document, section, lien).
+
+### Notes sur les sources
+
+- **Marine Le Pen** : programme **2022** « Le Projet » (22 mesures) — le programme 2027 du RN
+  n'étant pas encore publié.
+- **Bruno Retailleau** : programme du parti **LR** (2025-2026) — il n'était pas candidat en 2022.
+
+Ces deux cas sont signalés explicitement dans le site (page « Sources & méthode »).
+
+### Tester en local
+
+Le JSON est chargé en `fetch()`, ce qui ne fonctionne pas en ouvrant `index.html`
+directement (protocole `file://`). Lancer un mini-serveur :
+
+```bash
+python3 -m http.server 8000
+# puis ouvrir http://localhost:8000
+```
+
+### Déploiement GitHub Pages
+
+1. Pousser les fichiers à la **racine** du repo, branche `main`.
+2. Sur GitHub : *Settings → Pages → Build and deployment* → Source : **Deploy from a branch**,
+   Branch : `main`, Folder : `/ (root)`.
+3. Le site sera servi sur `https://<utilisateur>.github.io/nudge/`.
+
+Aucun build n'est nécessaire : les fichiers statiques sont servis tels quels.

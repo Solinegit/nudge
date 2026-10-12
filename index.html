@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nudge — lire les programmes en jouant</title>
+  <meta name="description" content="Un jeu pour lire directement des extraits de programmes électoraux : devinez à quel candidat appartient chaque citation." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <span class="logo">nudge</span>
+      <span class="tagline">lire les programmes en jouant</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Écran d'accueil -->
+    <section id="ecran-accueil" class="ecran">
+      <h1>Devinez d'où vient la citation.</h1>
+      <p class="lead">
+        Un extrait de programme, masqué. Six candidats, classés de gauche à droite.
+        Un seul nom est correct.
+      </p>
+      <ul class="rules">
+        <li><strong>1.</strong> Une citation est tirée au hasard d'un programme officiel.</li>
+        <li><strong>2.</strong> Vous choisissez le candidat qui l'a écrite.</li>
+        <li><strong>3.</strong> Le candidat est révélé, avec le lien vers son programme.</li>
+        <li><strong>4.</strong> Vous comparez : les autres candidats, même thème.</li>
+      </ul>
+      <button id="btn-jouer" class="btn btn-primary">Jouer</button>
+      <p class="note">
+        Les citations sont extraites à l'identique des documents officiels des candidats.
+        Chaque citation renvoie à sa source. Voir les
+        <a href="sources.html" target="_blank" rel="noopener">sources et méthode</a>.
+      </p>
+    </section>
+
+    <!-- Écran de jeu -->
+    <section id="ecran-jeu" class="ecran hidden">
+      <div class="theme-badge" id="theme-badge"></div>
+      <blockquote class="citation" id="citation"></blockquote>
+      <p class="question">À quel candidat appartient cet extrait ?</p>
+      <div class="candidats" id="candidats"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <div class="actions">
+        <button id="btn-comparer" class="btn hidden">Comparer le thème</button>
+        <button id="btn-suivant" class="btn hidden">Citation suivante</button>
+      </div>
+    </section>
+
+    <!-- Écran de révélation / comparaison -->
+    <section id="ecran-revelation" class="ecran hidden">
+      <div class="reveal-head">
+        <div class="theme-badge" id="reveal-theme"></div>
+        <h2>Comparaison du thème</h2>
+        <p class="lead">Comment les autres candidats traitent le même thème.</p>
+      </div>
+      <div class="comparaison" id="comparaison"></div>
+      <div class="actions">
+        <button id="btn-retour-jeu" class="btn">Rejouer</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Projet pédagogique — nudge à la lecture de programmes. Les citations appartiennent
+        aux candidats et aux partis ; elles sont citées à des fins d'information.
+      </p>
+      <p class="footer-links">
+        <a href="sources.html" target="_blank" rel="noopener">Sources &amp; méthode</a>
+        <a href="data/programmes.json" target="_blank" rel="noopener">Données (JSON)</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

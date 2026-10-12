@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sources &amp; méthode — Nudge</title>
+  <style>
+    :root {
+      --bg: #0f1115; --bg-soft: #171a21; --card: #1c2029;
+      --text: #e8eaf0; --muted: #9aa3b2; --accent: #4f8cff;
+      --border: #2a3040; --radius: 14px; --maxw: 860px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+    }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font-size: 1.8rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+    h2 { font-size: 1.2rem; margin: 32px 0 12px; }
+    .lead { color: var(--muted); margin: 0 0 8px; }
+    .back { color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px 18px; margin: 10px 0;
+    }
+    .card .nom { font-weight: 700; }
+    .card .meta { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+    .card a { color: var(--accent); word-break: break-word; }
+    .warn {
+      background: rgba(255, 107, 107, 0.08); border: 1px solid var(--border);
+      border-left: 4px solid var(--accent); border-radius: var(--radius);
+      padding: 14px 18px; margin: 16px 0; font-size: 0.95rem;
+    }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+    code {
+      background: var(--bg-soft); padding: 2px 6px; border-radius: 6px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="index.html">← Retour au jeu</a>
+    <h1>Sources &amp; méthode</h1>
+    <p class="lead">
+      Ce site cite des extraits de programmes électoraux à l'identique. Chaque citation
+      renvoie à sa source officielle. Voici la méthode et les documents utilisés.
+    </p>
+
+    <div class="warn">
+      <strong>Note sur les sources.</strong> Les programmes 2027 étant pour partie non
+      publiés au moment de la rédaction, certaines citations renvoient :
+      <ul>
+        <li>au <strong>programme 2022</strong> pour Marine Le Pen (le programme 2027 du RN
+          n'étant pas encore publié) ;</li>
+        <li>au <strong>programme du parti Les Républicains</strong> (2025-2026) pour Bruno
+          Retailleau, qui n'était pas candidat en 2022.</li>
+      </ul>
+      Ces deux cas sont signalés explicitement dans les données.
+    </div>
+
+    <h2>Les candidats et leurs documents sources</h2>
+
+    <div class="card">
+      <div class="nom">Jean-Luc Mélenchon — La France insoumise</div>
+      <div class="meta">
+        <a href="https://melenchon2027.fr/programme2025/livre/" target="_blank" rel="noopener">L'Avenir en commun (édition 2025)</a>
+        — 4e édition, janvier 2025, 831 mesures.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="nom">Marine Tondelier — Les Écologistes</div>
+      <div class="meta">
+        <a href="https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf" target="_blank" rel="noopener">Pour une prospérité écologique</a>
+        — programme des Écologistes, juillet 2026, 208 pages / 557 mesures.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="nom">Gabriel Attal — Renaissance</div>
+      <div class="meta">
+        <a href="https://attalpresident.fr/programme" target="_blank" rel="noopener">Mes chantiers capitaux (2027)</a>
+        — site officiel de campagne.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="nom">Édouard Philippe — Horizons</div>
+      <div class="meta">
+        <a href="https://www.edouardphilippe.fr/priorites" target="_blank" rel="noopener">Les priorités (2027)</a>
+        — site officiel de campagne.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="nom">Bruno Retailleau — Les Républicains</div>
+      <div class="meta">
+        <a href="https://republicains.fr/nos-propositions/" target="_blank" rel="noopener">Nos propositions pour la France (LR)</a>
+        — programme du parti, 2025-2026. Retailleau n'était pas candidat en 2022.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="nom">Marine Le Pen — Rassemblement national</div>
+      <div class="meta">
+        <a href="https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf" target="_blank" rel="noopener">Le Projet (2022) — 22 mesures</a>
+        — programme 2022 ; le programme 2027 du RN n'étant pas encore publié.
+      </div>
+    </div>
+
+    <h2>Les thèmes</h2>
+    <p>
+      Quatre thèmes, traités par l'ensemble des six programmes :
+      <strong>Économie &amp; pouvoir d'achat</strong>, <strong>Retraites</strong>,
+      <strong>Climat &amp; énergie</strong> et <strong>Éducation</strong>.
+    </p>
+    <div class="warn">
+      Le volet « Sécurité &amp; justice » n'est pas développé par les programmes LR et
+      Renaissance. Pour rester fidèle à la règle « un thème par programme », il a été
+      remplacé par « Éducation ».
+    </div>
+
+    <h2>Comment les données sont organisées</h2>
+    <p>
+      Les données sont dans un fichier JSON séparé,
+      <a href="data/programmes.json" target="_blank" rel="noopener"><code>data/programmes.json</code></a>,
+      modifiable sans toucher au code du site. Chaque citation y est associée à son
+      candidat, son thème et sa source (document, section, lien).
+    </p>
+
+    <h2>Méthode</h2>
+    <ul>
+      <li>Sélection des candidats selon un critère objectif (candidats testés dans les sondages, un par bord politique).</li>
+      <li>Sélection de thèmes abordés par tous les programmes.</li>
+      <li>Une citation par thème et par programme, choisie au hasard dans le jeu.</li>
+      <li>Les candidats sont classés de gauche à droite, dans l'ordre des bancs de l'Assemblée.</li>
+      <li>Les citations sont extraites à l'identique des documents officiels, avec source traçable.</li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "titre": "Nudge : lire les programmes en jouant",
+    "election": "Élection présidentielle française 2027",
+    "date_maj": "2026-10-12",
+    "note_sources": "Les citations sont extraites à l'identique des documents officiels des candidats et des partis. Chaque citation renvoie à sa source (document, section, lien). Les programmes 2027 étant pour partie non publiés, certaines sources renvoient au programme 2022 (Marine Le Pen) ou au programme du parti (Les Républicains, base de Bruno Retailleau).",
+    "note_themes": "Les thèmes retenus sont ceux traités par l'ensemble des six programmes. Le volet « Sécurité & justice » n'est pas développé par les programmes LR et Renaissance, il a donc été remplacé par « Éducation »."
+  },
+  "candidats": [
+    {
+      "id": "melenchon",
+      "nom": "Jean-Luc Mélenchon",
+      "parti": "La France insoumise",
+      "bord": "Extrême gauche",
+      "position": 1,
+      "programme": {
+        "titre": "L'Avenir en commun (édition 2025)",
+        "url": "https://melenchon2027.fr/programme2025/livre/",
+        "source": "Programme 2027, 4e édition publiée en janvier 2025 (831 mesures)"
+      }
+    },
+    {
+      "id": "tondelier",
+      "nom": "Marine Tondelier",
+      "parti": "Les Écologistes",
+      "bord": "Gauche",
+      "position": 2,
+      "programme": {
+        "titre": "Pour une prospérité écologique (juillet 2026)",
+        "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+        "source": "Programme des Écologistes, juillet 2026 (208 pages, 557 mesures)"
+      }
+    },
+    {
+      "id": "attal",
+      "nom": "Gabriel Attal",
+      "parti": "Renaissance",
+      "bord": "Centre",
+      "position": 3,
+      "programme": {
+        "titre": "Mes chantiers capitaux (2027)",
+        "url": "https://attalpresident.fr/programme",
+        "source": "Programme de campagne 2027, site officiel attalpresident.fr"
+      }
+    },
+    {
+      "id": "edouard-philippe",
+      "nom": "Édouard Philippe",
+      "parti": "Horizons",
+      "bord": "Centre-droit",
+      "position": 4,
+      "programme": {
+        "titre": "Les priorités (2027)",
+        "url": "https://www.edouardphilippe.fr/priorites",
+        "source": "Programme de campagne 2027, site officiel edouardphilippe.fr"
+      }
+    },
+    {
+      "id": "retailleau",
+      "nom": "Bruno Retailleau",
+      "parti": "Les Républicains",
+      "bord": "Droite",
+      "position": 5,
+      "programme": {
+        "titre": "Nos propositions pour la France (Les Républicains)",
+        "url": "https://republicains.fr/nos-propositions/",
+        "source": "Programme du parti LR (2025-2026) ; Retailleau n'était pas candidat en 2022, sa source exploitable est le programme du parti"
+      }
+    },
+    {
+      "id": "le-pen",
+      "nom": "Marine Le Pen",
+      "parti": "Rassemblement national",
+      "bord": "Extrême droite",
+      "position": 6,
+      "programme": {
+        "titre": "Le Projet (2022)",
+        "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+        "source": "Programme 2022 « Le Projet » (22 mesures) ; le programme 2027 du RN n'étant pas encore publié, la source retenue est le programme 2022"
+      }
+    }
+  ],
+  "themes": [
+    { "id": "economie", "nom": "Économie & pouvoir d'achat" },
+    { "id": "retraites", "nom": "Retraites" },
+    { "id": "climat", "nom": "Climat & énergie" },
+    { "id": "education", "nom": "Éducation" }
+  ],
+  "citations": [
+    {
+      "id": 1,
+      "candidat": "melenchon",
+      "theme": "economie",
+      "texte": "Porter immédiatement le SMIC mensuel à 1600 euros net et indexer les salaires sur l'inflation dans le privé et dans la fonction publique.",
+      "source": {
+        "document": "L'Avenir en commun (édition 2025)",
+        "section": "Augmenter les salaires et réduire les inégalités",
+        "url": "https://melenchon2027.fr/programme2025/livre/"
+      }
+    },
+    {
+      "id": 2,
+      "candidat": "melenchon",
+      "theme": "retraites",
+      "texte": "Abroger la réforme d'Emmanuel Macron passant l'âge de départ à la retraite à 64 ans et restaurer le droit à la retraite à 60 ans à taux plein pour 40 annuités de cotisations.",
+      "source": {
+        "document": "L'Avenir en commun (édition 2025)",
+        "section": "Garantir une retraite digne",
+        "url": "https://melenchon2027.fr/programme2025/livre/"
+      }
+    },
+    {
+      "id": 3,
+      "candidat": "melenchon",
+      "theme": "climat",
+      "texte": "Inscrire dans la Constitution le principe de la « règle verte », selon laquelle on ne prélève pas davantage à la nature que ce qu'elle est en état de reconstituer.",
+      "source": {
+        "document": "L'Avenir en commun (édition 2025)",
+        "section": "Chapitre 12 — Planification écologique",
+        "url": "https://melenchon2027.fr/programme2025/livre/"
+      }
+    },
+    {
+      "id": 4,
+      "candidat": "melenchon",
+      "theme": "education",
+      "texte": "Assurer la gratuité réelle de l'éducation publique, y compris les cantines, le transport et les activités périscolaires, fournir gratuitement aux élèves les manuels scolaires, ainsi que des fournitures sans marque, pour assurer une réelle égalité des conditions entre élèves sur tout le territoire et lutter contre l'intrusion marchande à l'école.",
+      "source": {
+        "document": "L'Avenir en commun (édition 2025)",
+        "section": "Reconstruire une école globale pour l'égalité et l'émancipation",
+        "url": "https://melenchon2027.fr/programme2025/livre/"
+      }
+    },
+    {
+      "id": 5,
+      "candidat": "tondelier",
+      "theme": "economie",
+      "texte": "Passer le salaire minimum à 2000 € brut par mois dès 2027.",
+      "source": {
+        "document": "Pour une prospérité écologique (juillet 2026)",
+        "section": "Proposition 13 — Assurer des rémunérations dignes",
+        "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+      }
+    },
+    {
+      "id": 6,
+      "candidat": "tondelier",
+      "theme": "retraites",
+      "texte": "Abroger l'âge légal de départ à la retraite à 64 ans (réforme Borne) pour revenir immédiatement à un âge minimum à 62 ans et viser une retraite à 60 ans en priorisant / réinstaurer la retraite à 60 ans pour les personnes ayant travaillé tôt et dans des conditions pénibles.",
+      "source": {
+        "document": "Pour une prospérité écologique (juillet 2026)",
+        "section": "Proposition 31 — Adopter une autre réforme des retraites",
+        "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+      }
+    },
+    {
+      "id": 7,
+      "candidat": "tondelier",
+      "theme": "climat",
+      "texte": "Planifier les investissements nécessaires à l'atteinte de la neutralité carbone en 2050. Adopter une loi de programmation climatique (dite « loi énergie-climat ») comprenant la sobriété, l'efficacité et les énergies renouvelables (EnR).",
+      "source": {
+        "document": "Pour une prospérité écologique (juillet 2026)",
+        "section": "Proposition 1 — Gagner la bataille du climat",
+        "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+      }
+    },
+    {
+      "id": 8,
+      "candidat": "tondelier",
+      "theme": "education",
+      "texte": "Faire de l'école primaire une priorité absolue en réduisant la taille des classes à 19 élèves en 2032 et à 12 élèves dans les établissements en réseau d'éducation prioritaire (REP et REP+).",
+      "source": {
+        "document": "Pour une prospérité écologique (juillet 2026)",
+        "section": "Proposition 23 — Viser la réussite de tous les élèves",
+        "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf"
+      }
+    },
+    {
+      "id": 9,
+      "candidat": "attal",
+      "theme": "economie",
+      "texte": "Le travail doit payer. Le travail doit permettre de vivre, pas seulement de survivre. Notre combat : faire monter les salaires.",
+      "source": {
+        "document": "Mes chantiers capitaux (2027)",
+        "section": "Chantier capital 02 — Travail & salaires",
+        "url": "https://attalpresident.fr/programme/travail-salaires"
+      }
+    },
+    {
+      "id": 10,
+      "candidat": "attal",
+      "theme": "retraites",
+      "texte": "Pour augmenter le taux d'emploi des seniors, l'enjeu ne sera plus l'âge de départ à la retraite, mais la durée de cotisation.",
+      "source": {
+        "document": "Mes chantiers capitaux (2027)",
+        "section": "Chantier capital 02 — Travail & salaires / Repenser les retraites",
+        "url": "https://attalpresident.fr/programme/travail-salaires"
+      }
+    },
+    {
+      "id": 11,
+      "candidat": "attal",
+      "theme": "climat",
+      "texte": "Pour respecter nos engagements climatiques, nous devons tripler notre rythme annuel de réduction des émissions entre maintenant et 2030 : passer de 1,8 % à 5 % par an.",
+      "source": {
+        "document": "Mes chantiers capitaux (2027)",
+        "section": "Dette à résorber 02 — Dette écologique",
+        "url": "https://attalpresident.fr/programme/dette-ecologique"
+      }
+    },
+    {
+      "id": 12,
+      "candidat": "attal",
+      "theme": "education",
+      "texte": "Je fixe pour notre système éducatif un objectif simple : reprendre en dix ans l'une des premières places du classement PISA.",
+      "source": {
+        "document": "Mes chantiers capitaux (2027)",
+        "section": "Chantier capital 01 — École",
+        "url": "https://attalpresident.fr/programme/education"
+      }
+    },
+    {
+      "id": 13,
+      "candidat": "edouard-philippe",
+      "theme": "economie",
+      "texte": "Conclure un pacte fiscal inédit avec les entreprises : 50 Md€ de baisses d'impôts de production contre 50 Md€ d'aides publiques improductives en moins, le plus grand choc de compétitivité jamais réalisé.",
+      "source": {
+        "document": "Les priorités (2027)",
+        "section": "Pour une France plus prospère",
+        "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+      }
+    },
+    {
+      "id": 14,
+      "candidat": "edouard-philippe",
+      "theme": "retraites",
+      "texte": "Garantir l'équilibre de notre système de retraites pour protéger les générations futures : travailler plus tout en prenant en compte la diversité des carrières, créer un pilier de capitalisation à 10-15 % des pensions d'ici quinze ans, confier la gestion du régime à l'équilibre aux partenaires sociaux.",
+      "source": {
+        "document": "Les priorités (2027)",
+        "section": "Pour une France plus prospère",
+        "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere"
+      }
+    },
+    {
+      "id": 15,
+      "candidat": "edouard-philippe",
+      "theme": "climat",
+      "texte": "Assurer notre souveraineté énergétique en relançant le nucléaire, en développant les renouvelables et en électrifiant massivement nos usages.",
+      "source": {
+        "document": "Les priorités (2027)",
+        "section": "Pour une France plus conquérante — Pour une écologie à impact",
+        "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
+      }
+    },
+    {
+      "id": 16,
+      "candidat": "edouard-philippe",
+      "theme": "education",
+      "texte": "Nous ferons la révolution scolaire la plus importante depuis Jules Ferry : construire l'école du 21e siècle, libre, performante et moderne.",
+      "source": {
+        "document": "Les priorités (2027)",
+        "section": "Pour une France plus attentive à ses enfants",
+        "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants"
+      }
+    },
+    {
+      "id": 17,
+      "candidat": "retailleau",
+      "theme": "economie",
+      "texte": "Nous proposons de libérer le temps de travail en supprimant toutes les cotisations sociales au-delà de 1 623 heures par an. Entre le brut et le net, seules resteraient la CSG et la CRDS tandis que l'actuelle exonération d'IR des heures supplémentaires serait maintenue.",
+      "source": {
+        "document": "Nos propositions pour la France (Les Républicains)",
+        "section": "Travail gagnant — Mieux rémunérer le travail et renforcer la compétitivité",
+        "url": "https://republicains.fr/nos-propositions/"
+      }
+    },
+    {
+      "id": 18,
+      "candidat": "retailleau",
+      "theme": "retraites",
+      "texte": "Notre proposition : un « cumul emploi-retraite rénové » simple et incitatif. L'objectif est de simplifier les dispositifs existants et de rendre la poursuite d'activité systématiquement avantageuse pour les seniors ayant validé l'ensemble de leurs trimestres, comme pour les entreprises.",
+      "source": {
+        "document": "Nos propositions pour la France (Les Républicains)",
+        "section": "Travail gagnant — Libérer le travail des seniors",
+        "url": "https://republicains.fr/nos-propositions/"
+      }
+    },
+    {
+      "id": 19,
+      "candidat": "retailleau",
+      "theme": "climat",
+      "texte": "Bénéficier d'une électricité bon marché en stoppant le subventionnement de nouvelles capacités éoliennes et photovoltaïques (proposition 4), en protégeant le parc nucléaire des arrêts subis (proposition 5), en garantissant aux industriels et consommateurs français le bénéfice de la compétitivité du parc nucléaire (proposition 6), et en levant immédiatement les freins réglementaires à l'électrification (proposition 7).",
+      "source": {
+        "document": "Nos propositions pour la France (Les Républicains)",
+        "section": "Baisser la facture d'électricité des Français",
+        "url": "https://republicains.fr/nos-propositions/"
+      }
+    },
+    {
+      "id": 20,
+      "candidat": "retailleau",
+      "theme": "education",
+      "texte": "Un peuple dont un enfant sur cinq entre au collège sans savoir lire couramment, c'est un peuple à qui l'on vole l'essentiel : la liberté de penser par soi-même, la conscience de ce qu'il est, la force de bâtir son avenir.",
+      "source": {
+        "document": "Nos propositions pour la France (Les Républicains)",
+        "section": "Pour une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté",
+        "url": "https://republicains.fr/nos-propositions/"
+      }
+    },
+    {
+      "id": 21,
+      "candidat": "le-pen",
+      "theme": "economie",
+      "texte": "Baisser la TVA de 20% à 5.5% sur les produits énergétiques (carburants, fioul, gaz et électricité) en tant que biens de première nécessité.",
+      "source": {
+        "document": "Le Projet (2022)",
+        "section": "Mesure 4 — Baisser la TVA sur les produits énergétiques",
+        "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf"
+      }
+    },
+    {
+      "id": 22,
+      "candidat": "le-pen",
+      "theme": "retraites",
+      "texte": "Permettre à ceux qui ont commencé à travailler avant 20 ans pendant 40 annuités de prendre leur retraite à 60 ans.",
+      "source": {
+        "document": "Le Projet (2022)",
+        "section": "Mesure 9 — Garantir à nos aînés une retraite sereine et digne",
+        "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf"
+      }
+    },
+    {
+      "id": 23,
+      "candidat": "le-pen",
+      "theme": "climat",
+      "texte": "Relancer la filière nucléaire, hydroélectrique et investir dans la filière hydrogène. Arrêter les projets éoliens et démanteler progressivement les parcs existants.",
+      "source": {
+        "document": "Le Projet (2022)",
+        "section": "Mesure 12 — Assurer notre indépendance énergétique",
+        "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf"
+      }
+    },
+    {
+      "id": 24,
+      "candidat": "le-pen",
+      "theme": "education",
+      "texte": "Restaurer notre système éducatif pour qu'il retrouve sa mission de transmission des savoirs. Remettre au cœur des programmes l'enseignement du français, des mathématiques et de l'histoire.",
+      "source": {
+        "document": "Le Projet (2022)",
+        "section": "Mesure 15 — Restaurer notre système éducatif",
+        "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf"
+      }
+    }
+  ]
+}

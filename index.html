@@ -39,24 +39,33 @@
 
     <!-- Écran de jeu -->
     <section id="ecran-jeu" class="ecran hidden">
-      <div class="theme-badge" id="theme-badge"></div>
+      <div class="jeu-entete">
+        <div class="theme-badge" id="theme-badge"></div>
+        <div class="score-display" aria-live="polite">
+          <span>Votre score</span>
+          <strong id="score">0 / 0</strong>
+        </div>
+      </div>
       <blockquote class="citation" id="citation"></blockquote>
       <p class="question">À quel candidat appartient cet extrait ?</p>
       <div class="candidats" id="candidats"></div>
-      <div id="feedback" class="feedback hidden"></div>
-      <div class="actions">
-        <button id="btn-comparer" class="btn hidden">Comparer le thème</button>
-        <button id="btn-suivant" class="btn hidden">Citation suivante</button>
-      </div>
     </section>
 
     <!-- Écran de révélation / comparaison -->
     <section id="ecran-revelation" class="ecran hidden">
       <div class="reveal-head">
-        <div class="theme-badge" id="reveal-theme"></div>
+        <div class="reveal-meta">
+          <div class="theme-badge" id="reveal-theme"></div>
+          <div class="score-display" aria-live="polite">
+            <span>Votre score</span>
+            <strong id="score-reveal">0 / 0</strong>
+          </div>
+        </div>
+        <p id="answer-result" class="answer-result" role="status" aria-live="polite"></p>
         <h2>Comparaison du thème</h2>
-        <p class="lead">Comment les autres candidats traitent le même thème.</p>
+        <p class="lead">Citations et part des joueurs ayant choisi chaque candidat.</p>
       </div>
+      <p id="stats-status" class="stats-status" role="status" aria-live="polite"></p>
       <div class="comparaison" id="comparaison"></div>
       <div class="actions">
         <button id="btn-retour-jeu" class="btn">Rejouer</button>
@@ -77,6 +86,7 @@
     </div>
   </footer>
 
+  <script src="js/stats-config.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

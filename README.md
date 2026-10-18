@@ -137,9 +137,30 @@ python3 -m http.server 8000
 
 ### Déploiement GitHub Pages
 
-1. Pousser les fichiers à la **racine** du repo, branche `main`.
+1. Pousser les fichiers à la **racine** du repo, branche `nathan`.
 2. Sur GitHub : *Settings → Pages → Build and deployment* → Source : **Deploy from a branch**,
-   Branch : `main`, Folder : `/ (root)`.
+  Branch : `nathan`, Folder : `/ (root)`.
 3. Le site sera servi sur `https://<utilisateur>.github.io/nudge/`.
 
 Aucun build n'est nécessaire : les fichiers statiques sont servis tels quels.
+
+## Score et statistiques partagées
+
+Le score personnel (bonnes réponses / réponses totales) est conservé dans le stockage
+local du navigateur. Les réponses partagées sont agrégées par citation et candidat ;
+aucun nom de joueur ni historique individuel n'est enregistré. La répartition apparaît
+après avoir répondu, pour ne pas influencer le choix.
+
+Pour activer les statistiques partagées :
+
+1. Créer un projet Supabase.
+2. Exécuter `supabase/schema.sql` dans le SQL Editor du projet.
+3. Renseigner l'URL du projet et sa clé publique `anon` dans `js/stats-config.js`.
+  Ne jamais utiliser la clé `service_role` dans le site.
+4. Déployer le site. Le score local fonctionne même sans configuration Supabase.
+
+La table ne contient que des compteurs, mais son endpoint public ne limite pas les
+envois automatisés : les statistiques peuvent être manipulées. Ajouter une protection
+anti-abus (par exemple CAPTCHA ou Edge Function avec limitation de débit) avant de
+considérer ces chiffres comme fiables. Si les identifiants des candidats changent,
+mettre aussi à jour la contrainte correspondante dans `supabase/schema.sql`.
